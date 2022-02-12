@@ -1,3 +1,10 @@
+/* 
+# ./tcp_serve_toupper
+# open several terminals as clients
+# tcp_client 127.0.0.1 8080 on each client
+# chat
+*/
+
 #include "chap.h"
 #include <ctype.h>
 
