@@ -1,7 +1,7 @@
 CC=gcc
-SRC=tcp_client.c
-OBJ=tcp_client.o
-EXE=tcp_client
+SRC=tcp_serve_toupper.c
+OBJ=tcp_serve_toupper.o
+EXE=tcp_serve_toupper
 
 
 ${EXE}: ${OBJ}
