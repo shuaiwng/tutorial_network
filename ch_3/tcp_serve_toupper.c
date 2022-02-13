@@ -52,6 +52,9 @@ int main(){
     while(1){
         fd_set reads;
         reads = master;
+        /* select() blockes until at least one of the sockets is ready to be read from.
+        When select() returns, reads is modified so that it only contains the sockets
+        that are ready to be read from. */ 
         if (select(max_socket+1, &reads, 0, 0, 0) < 0){
             fprintf(stderr, "select() failed. (%d)\n", GETSOCKETERRNO());
             return 1;
