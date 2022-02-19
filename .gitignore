@@ -3,3 +3,6 @@ unix_list
 time_server
 tcp_client
 tcp_serve_toupper
+udp_recvfrom
+udp_sendto
+udp_serve_toupper
